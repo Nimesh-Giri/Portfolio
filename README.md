@@ -1,75 +1,72 @@
-# React + TypeScript + Vite
+# Nimesh Giri- Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website showcasing my background, projects, technical skills, and learning journey as a Software Engineering student.
 
-Currently, two official plugins are available:
+I'm currently pursuing a Bachelor's degree in Software Engineering at Pokhara University, Nepal. I enjoy building practical projects, exploring new technologies, and continuously improving my software development skills.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About the Project
 
-## React Compiler
+This repository contains the source code for my personal portfolio website.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The goal is to create a clean, minimal, and accessible space where visitors can learn about me, explore the projects I'm working on, and follow my learning journey.
 
-## Expanding the ESLint configuration
+## Built With
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** — UI development
+- **TypeScript** — Type-safe JavaScript
+- **Vite** — Development server and build tooling
+- **Tailwind CSS** — Styling and layout
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Website Sections
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Home** — Introduction and overview.
+- **About** — My background and interests.
+- **Projects** — A collection of projects and experiments.
+- **Skills** — Technologies and tools I'm learning and using.
+- **Learning** — Topics I'm currently exploring.
+- **Contact** — Ways to get in touch.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
 
+To run this project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Nimesh-Giri/Portfolio.git
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Navigate to the project directory
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd Portfolio
 ```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal to view the website.
+
+### 5. Build for production
+
+```bash
+npm run build
+```
+
+## Project Status
+
+The portfolio is currently under development. I'm working on improving its responsive design, interactions, animations, and overall visual presentation before deployment.
+
+
+---
+
+Built with React, TypeScript, and a continuous desire to learn and build.
